@@ -1,0 +1,50 @@
+
+.game-container
+{
+    position:relative;
+    background-image: url(/public/bb.jpg);
+    background-size: contain;
+    width:100%;
+    height: 625px;
+    
+
+}
+
+.game-area
+{
+    width:1300px;
+    height: 550px;
+    margin-left: 20px;
+    
+}
+.mario{
+    position:absolute;
+    width: 80px;
+    height: 85px;
+    transition: all 0.2s;  
+   
+    
+}
+.marioflip{
+    position:absolute;
+    width: 80px;
+    height: 85px;
+    transform: scaleX(-1);
+    transition: all 0.2s;  
+   
+
+    
+}
+
+.pipe{
+    width:50px;
+    height:100px;
+}
+
+.level{
+    position:absolute;
+    font-family: 'Rubik Burned', system-ui;
+    font-size: 70px;
+    color:whitesmoke;
+    left:0;
+}

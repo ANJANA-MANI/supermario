@@ -1,0 +1,33 @@
+.mushroom{
+    position:absolute;
+    width: 75px;
+    height: 60px;
+    transition:0.1ms;
+    z-index: 2;
+   
+}
+.mushroom2{
+    position:absolute;
+    width: 95px;
+    height: 90px;
+    transition:0.1ms;
+    z-index: 2;
+   
+}
+.status
+{
+    position:absolute;
+    font-family: 'Rubik Burned', system-ui;
+    font-size: 80px;
+    color:white;
+    text-align: center;
+    justify-content: center;
+    margin-top: 300px;
+    margin-left: 400px;
+     border:none;
+     background-image: url('/public/brick.PNG');
+     background-size: cover;
+     padding: 10px;
+
+   
+}

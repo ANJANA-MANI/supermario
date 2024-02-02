@@ -1,0 +1,8 @@
+.score{
+    position:absolute;
+    font-family: 'Rubik Burned', system-ui;
+    font-size: 70px;
+    color:whitesmoke;
+    right:80px;
+    padding: 10px;
+}
