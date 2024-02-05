@@ -16,17 +16,21 @@ function Landing() {
         className=""
         onClick={handleButtonClick}
         style={{
-          margin: 'auto',
+         
           border: 'none',
-          width: '155px',
-          height: '160px',
+          width: '150px',
+          height: '150px',
           borderRadius: '20px',
           backgroundImage: `url(logo.png)`,
           backgroundPosition: 'left',
           backgroundSize: 'cover',
           display: 'block',
-          backgroundColor: 'white',
-          marginTop: '150px'
+          position:'absolute',
+          backgroundColor:"#F7DC6F",
+          marginTop:"150px"
+         
+         
+       
         }}
       ></button>
     </div>

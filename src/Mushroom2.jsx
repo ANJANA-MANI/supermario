@@ -1,22 +1,23 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-function Mushroom2({mPosition,Mbottom,bg}) {
+function Mushroom2({mPosition,Mbottom,bg,onStateChange}) {
+  
   const navigate = useNavigate();
 
   const handleButtonClick = () => {
     // Use the navigate function to navigate to the '/Home' route
     navigate('/');
   };
- const[mushroomRight,setmushroomRight]=useState(0)
- const[maxRight,setmaxRight]=useState(1250)
- const[mushroomBottom,setmushroomBottom]=useState(60)
+ const[mushroomRight,setmushroomRight]=useState(700)
+ const[maxRight,setmaxRight]=useState(1000)
+ const[mushroomBottom,setmushroomBottom]=useState(40)
  const[collision,setCollision]=useState(false)
 console.log('mario postion',mPosition);
 
 console.log('mushroom2 postion',mushroomRight);
 
  const[limitLeft,setlimitLeft]=useState(2)
-  const[limitRight,setlimitRight]=useState(1100)
+  const[limitRight,setlimitRight]=useState(1200)
   const[gameover,setGameover]=useState('none');
   const [overaudio, setoverAudio] = useState(new Audio('over.mp3'));
   const[obstacles,setObstacles]=useState({})
@@ -31,7 +32,7 @@ console.log('mushroom2 postion',mushroomRight);
       else if(mushroomRight==maxRight)
       {
         //fall();
-        setmushroomRight(0);
+        setmushroomRight(100);
       }
     },250);
 
@@ -41,6 +42,7 @@ console.log('mushroom2 postion',mushroomRight);
        bg.pause(); 
 
        setGameover('block');
+       onStateChange(true);
        fall();
        overaudio.play();
       }

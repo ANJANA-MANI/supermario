@@ -1,17 +1,17 @@
 .mushroom{
     position:absolute;
-    width: 75px;
-    height: 60px;
+    width: 65px;
+    height: 50px;
     transition:0.1ms;
-    z-index: 2;
+    z-index: 1;
    
 }
 .mushroom2{
     position:absolute;
-    width: 95px;
-    height: 90px;
+    width: 75px;
+    height: 70px;
     transition:0.1ms;
-    z-index: 2;
+    z-index: 1;
    
 }
 .status
@@ -22,12 +22,13 @@
     color:white;
     text-align: center;
     justify-content: center;
-    margin-top: 300px;
+    margin-top: 400px;
     margin-left: 400px;
      border:none;
      background-image: url('/public/brick.PNG');
      background-size: cover;
      padding: 10px;
+     z-index: 1;
 
    
 }

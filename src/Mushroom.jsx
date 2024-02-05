@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-function Mushroom({mPosition,Mbottom,bg}) {
-  const navigate = useNavigate();
+function Mushroom({mPosition,Mbottom,bg,onStateChange}) {
 
+
+  //console.log(onStateChange);
+  const navigate = useNavigate();
   const handleButtonClick = () => {
     // Use the navigate function to navigate to the '/Home' route
     navigate('/');
@@ -41,6 +43,7 @@ function Mushroom({mPosition,Mbottom,bg}) {
        bg.pause(); 
 
        setGameover('block');
+       onStateChange(true);
        fall();
        overaudio.play();
       }
@@ -77,7 +80,6 @@ function Mushroom({mPosition,Mbottom,bg}) {
   return (
     <>
     <div>
-    <img className="mushroom" src="brown.gif" alt="" style={{right:`${mushroomRight}px`,bottom:`${mushroomBottom}px`}} />
     <img className="mushroom" src="brown.gif" alt="" style={{right:`${mushroomRight}px`,bottom:`${mushroomBottom}px`}} />
      <button onClick={handleButtonClick} className='status' style={{display:`${gameover}`}}>GAME OVER</button>
     </div>

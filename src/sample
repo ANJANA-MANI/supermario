@@ -1,0 +1,4 @@
+  <Mushroom  mPosition={marioposition} Mbottom={mariobottom} bg={audio} />
+      
+       <Mushroom2  mPosition={marioposition} Mbottom={mariobottom} bg={audio} />
+     

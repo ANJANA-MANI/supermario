@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Mushroom from './Mushroom';
 import Coins from './Coins';
+import Mushroom2 from './Mushroom2';
+
 
 function Marioo() {
   const [mario, setmMario] = useState();
@@ -172,7 +174,7 @@ function Marioo() {
         />
         <Coins/>
       <Mushroom mPosition={marioposition} Mbottom={mariobottom} bg={audio} />
-      
+      <Mushroom2 mPosition={marioposition} Mbottom={mariobottom} bg={audio} />
       </div>
       </div>
       

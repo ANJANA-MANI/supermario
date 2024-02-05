@@ -4,17 +4,19 @@
     position:relative;
     background-image: url(/public/bb.jpg);
     background-size: contain;
-    width:100%;
+    width:1350px;
     height: 625px;
     
 
 }
+
 
 .game-area
 {
     width:1300px;
     height: 550px;
     margin-left: 20px;
+
     
 }
 .mario{
@@ -22,18 +24,66 @@
     width: 80px;
     height: 85px;
     transition: all 0.2s;  
-   
+    z-index: 1;
     
+}
+.treasure1{
+    position:absolute;
+    left: 470px;
+    bottom: 150px;
+    transition: all 0.2s;  
+ 
+}
+.treasure2{
+    position:absolute;
+    left:530px;
+    bottom: 150px;
+    transition: all 0.2s;  
+ 
+}
+.treasure3{
+    position:absolute;
+    left: 590px;
+    bottom: 150px;
+    transition: all 0.2s;  
+ 
+}
+.treasure4{
+    position:absolute;
+    left: 650px;
+    bottom: 150px;
+    transition: all 0.2s;  
+ 
+}
+.treasure5{
+    position:absolute;
+    left: 710px;
+    bottom: 150px;
+    transition: all 0.2s;  
+ 
+}
+.castle{
+    position:absolute;
+    left: 1070px;
+    bottom:60px;
+    transition: all 0.2s;  
+ 
+}
+.flag{
+    position:absolute;
+    left: 1000px;
+    bottom:60px;
+    transition: all 0.2s;  
+ z-index: 2;
 }
 .marioflip{
     position:absolute;
     width: 80px;
     height: 85px;
     transform: scaleX(-1);
-    transition: all 0.2s;  
+    transition: all 0.2s; 
+    z-index: 1; 
    
-
-    
 }
 
 .pipe{
@@ -47,4 +97,34 @@
     font-size: 70px;
     color:whitesmoke;
     left:0;
+}
+.status2
+{
+    position:absolute;
+    font-family: 'Rubik Burned', system-ui;
+    font-size: 80px;
+    color:white;
+    text-align: center;
+    justify-content: center;
+    margin-top: 400px;
+    margin-left: 400px;
+     border:none;
+     background-image: url('/public/brick.PNG');
+     background-size: cover;
+     padding: 10px;
+     z-index: 1;
+
+   
+}
+.dead-class{
+    position:absolute;
+    width: 40px;
+    height: 85px;
+    transform: rotate(-90deg);
+    transition: all 0.2s; 
+    z-index: 1; 
+    top: 99%;
+    
+    
+   
 }
